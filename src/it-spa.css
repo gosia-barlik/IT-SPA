@@ -1,0 +1,82 @@
+body.container-fluid {
+  margin: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  color: #181b3a;
+  background-color: #EEEEEE;
+}
+svg{
+  cursor:pointer
+}
+
+/* HEADER */
+
+header.container {
+  position: relative;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header h1 {
+  width:90%
+}
+
+header h1, .iconShopping p {
+  display: inline-block;
+  flex: 0 0 auto
+}
+
+.iconShopping {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  width: 300px
+}
+
+/* NAVIGATION */
+nav.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.nav-btn, button.shop-item-btn {
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+  color: #1a237e;
+  border-radius: 24px;
+  border: transparent;
+  box-shadow: 5px 5px 15px #d5d2d0, -5px -5px 15px #ffffff;
+  cursor: pointer;
+}
+
+/* CART */
+.cart{
+width: 70%;
+height:50%;
+background-color: cornsilk;
+padding:15px;
+margin:15px;
+transition: 0.3s linear;
+transform: scale(0)
+}
+.cart.active {
+  transform: scale(1)
+}
+
+.cartHeader{
+  display:flex
+}
+.cartHeader h2{
+  width:95%;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+article {
+  display: flex !important
+}
